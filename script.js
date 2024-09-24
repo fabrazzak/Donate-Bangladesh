@@ -7,7 +7,7 @@ function donationHandle() {
     // btn active color 
     addClass("btn-donation", "bg-green-500")
     removeClass("btn-history", "bg-green-500")
-    addClass("blog-section", "hidden")
+    
 }
 
 function historyHandle() {
@@ -17,7 +17,7 @@ function historyHandle() {
     // btn active color 
     addClass("btn-history", "bg-green-500")
     removeClass("btn-donation", "bg-green-500")
-    addClass("blog-section", "hidden")
+  
 
 }
 
@@ -42,6 +42,8 @@ function donateNow(inputText, ExistFund, reasonFactModal,   title) {
             // history data send 
             createDiv("history-container", title, donateMoney);
             my_modal_5.showModal();
+            addClass("not-found", "hidden")
+           
         }
         else {
             alert("Please type positive Number")
@@ -66,15 +68,4 @@ function quotaDonateNow(){
 }
 
 
-
-// blog section 
-
-document.getElementById("blog-btn").addEventListener("click",function(){
-
-    addClass("history", "hidden")
-    addClass("donation", "hidden")
-    removeClass("blog-section", "hidden")
-
-
-})
 

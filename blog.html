@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+
+    <!-- tailwind css  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google font  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        .lexend-font {
+            font-family: "Lexend", sans-serif
+        }
+    </style>
+</head>
+
+<body class="lexend-font">
+    <!-- Header section  -->
+    <header class="sticky top-0 bg-[#f8f8f8f0]">
+        <div class="   ">
+            <div class="bg-[#faf3e4]">
+                <div class="container mx-auto ">
+                    <div class="  flex justify-between py-4 contaner md:mx-10 mx-2">
+                        <div class="">
+                            <a id="blog-btn" class="btn bg-green-500 text-xl ">Blog</a>
+                        </div>
+                        <div class="  l">
+                            <ul class="">
+                                <li><a href="/" class="md:text-2xl font-bold  flex justify-center items-center gap-5"><img
+                                            class="w-8 " src="assets/logo.png" alt=""> Donate Bangladesh</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="">
+                            <p class="flex  gap-2 items-center justify-between">
+                                <button class="btn "> <img src="assets/coin.png" alt=""><span id="personal-balance">
+                                        100000 </span> BDT</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center items-center gap-8 py-4 ">
+                <a href="/"><button id="btn-donation" onclick="donationHandle()" class="btn no-hover bg-green-500 ">Donation</button></a>
+                <a href="/"><button id="btn-history" onclick="historyHandle()" class="btn no-hover ">History</button></a>
+            </div>
+        </div>
+    </header>
+    <!-- main section  -->
+    <main>
+
+
+
+        <!-- blog page  -->
+
+        <section id="blog-section" class="container mx-auto  ">
+            <div class="w-9/12 mx-auto py-8">
+                <div class="flex flex-col rounded-xl border p-8 gap-8 ">
+
+                    <div class="collapse collapse-arrow bg-base-200">
+                        <input type="radio" name="my-accordion-2" checked="checked" />
+                        <div class="collapse-title text-2xl font-medium">What is the Document Object Model (DOM)?</div>
+                        <div class="collapse-content">
+                            <p>The Document Object Model (DOM) is the data representation of the objects that make up
+                                the structure and content of a
+                                document on the Web. This guide will introduce the DOM, explain how the DOM represents
+                                an HTML document in memory, and
+                                demonstrate how to use the API to create web content and applications.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow bg-base-200">
+                        <input type="radio" name="my-accordion-2" />
+                        <div class="collapse-title text-2xl font-medium">How do you select an element from the DOM?
+                        </div>
+                        <div class="collapse-content">
+                            <p>The Selectors API offers methods that allow you to quickly and easily retrieve Element
+                                nodes from the DOM by matching
+                                them against a set of selectors. This is a much faster approach compared to previous
+                                techniques, where it was necessary
+                                to, for example, use a loop in JavaScript code to locate the specific items you needed
+                                to find.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow bg-base-200">
+                        <input type="radio" name="my-accordion-2" />
+                        <div class="collapse-title text-xl font-medium">What is event delegation in the context of the
+                            DOM, and why is it useful?</div>
+                        <div class="collapse-content">
+                            <p>Event delegation is the process of utilizing event propagation (bubbling) to manage
+                                events at a higher level in the DOM
+                                compared to the element where the event initially occurred. This approach enables us to
+                                attach a single event listener
+                                for elements that currently exist or may be added in the future.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow bg-base-200">
+                        <input type="radio" name="my-accordion-2" />
+                        <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes
+                            and styles using the DOM?</div>
+                        <div class="collapse-content">
+                            <p>The classList object only provide methods to change the class of an element. If you want
+                                to change other attributes like
+                                id , href , or src , you can use the setAttribute() method. The setAttribute() method
+                                accepts two arguments: The name of
+                                the attribute to set.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+    </main>
+    <!-- Footer section  -->
+    <footer>
+        <div class="bg-slate-50 min-h-20 min-w-20">
+
+        </div>
+    </footer>
+
+
+    <script src="utility.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
