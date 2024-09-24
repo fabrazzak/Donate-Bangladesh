@@ -7,6 +7,7 @@ function donationHandle() {
     // btn active color 
     addClass("btn-donation", "bg-green-500")
     removeClass("btn-history", "bg-green-500")
+    addClass("blog-section", "hidden")
 }
 
 function historyHandle() {
@@ -16,6 +17,7 @@ function historyHandle() {
     // btn active color 
     addClass("btn-history", "bg-green-500")
     removeClass("btn-donation", "bg-green-500")
+    addClass("blog-section", "hidden")
 
 }
 
@@ -63,4 +65,16 @@ function quotaDonateNow(){
     donateNow("quota-input", "quota-fund", "injured-quota",  "quota-title");    
 }
 
+
+
+// blog section 
+
+document.getElementById("blog-btn").addEventListener("click",function(){
+
+    addClass("history", "hidden")
+    addClass("donation", "hidden")
+    removeClass("blog-section", "hidden")
+
+
+})
 

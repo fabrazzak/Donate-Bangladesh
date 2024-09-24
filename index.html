@@ -31,7 +31,7 @@
                 <div class="container mx-auto ">
                     <div class="  flex justify-between py-4 contaner md:mx-10 mx-2">
                         <div class="">
-                            <a class="btn bg-green-500 text-xl ">Blog</a>
+                            <a id="blog-btn" class="btn bg-green-500 text-xl ">Blog</a>
                         </div>
                         <div class="  l">
                             <ul class="">
@@ -41,8 +41,8 @@
                             </ul>
                         </div>
                         <div class="">
-                            <p class="flex  gap-2 items-center justify-between"> <img src="assets/coin.png" alt="">
-                                <span id="personal-balance"> 100000 </span> BDT
+                            <p class="flex  gap-2 items-center justify-between"> 
+                                <button class="btn "> <img src="assets/coin.png" alt=""><span id="personal-balance"> 100000 </span> BDT</button>
                             </p>
                         </div>
                     </div>
@@ -150,28 +150,7 @@
 
         </section>
 
-        <!-- modal  -->
-
-        <section>
-            <!-- Open the modal using ID.showModal() method -->            
-            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-                <div class="modal-box flex justify-center items-center flex-col gap-2">
-                    <h3 class="text-4xl font-bold mb-5">Congrates!</h3>
-                    <div class="flex gap-3 justify-center items-center">
-                        <img class="w-10" src="/assets//coin.png" alt="">
-                        <h4 id="donate-money" class="text-2xl"> </h4>
-                    </div>
-                    <p class="py-4">You have Donated for  <span id="donate-reason-place"></span></p>
-                   <h3 class="text-lg font-bold">Successfully</h3>
-                    <div class="modal-action">
-                        <form method="dialog">
-                            <!-- if there is a button in form, it will close the modal -->
-                            <button class="btn">Close Confirmation</button>
-                        </form>
-                    </div>
-                </div>
-            </dialog>
-        </section>
+       
 
         <!-- history section  -->
 
@@ -183,6 +162,81 @@
                 </div>
             </div>
         </section>
+
+        <!-- modal  -->
+        
+        <section>
+            <!-- Open the modal using ID.showModal() method -->
+            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                <div class="modal-box flex justify-center items-center flex-col gap-2">
+                    <h3 class="text-4xl font-bold mb-5">Congrates!</h3>
+                    <div class="flex gap-3 justify-center items-center">
+                        <img class="w-10" src="assets//coin.png" alt="">
+                        <h4 id="donate-money" class="text-2xl"> </h4>
+                    </div>
+                    <p class="py-4">You have Donated for <span id="donate-reason-place"></span></p>
+                    <h3 class="text-lg font-bold">Successfully</h3>
+                    <div class="modal-action">
+                        <form method="dialog">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button class="btn">Close Confirmation</button>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
+        </section>
+
+
+        <!-- blog page  -->
+
+        <section id="blog-section" class="container mx-auto hidden  ">
+            <div class="w-9/12 mx-auto py-8">
+                <div class="flex flex-col rounded-xl border p-8 gap-8 "> 
+
+                    <div class="collapse collapse-arrow bg-base-200">
+                        <input type="radio" name="my-accordion-2" checked="checked" />
+                        <div class="collapse-title text-2xl font-medium">What is the Document Object Model (DOM)?</div>
+                        <div class="collapse-content">
+                            <p>The Document Object Model (DOM) is the data representation of the objects that make up the structure and content of a
+                            document on the Web. This guide will introduce the DOM, explain how the DOM represents an HTML document in memory, and
+                            demonstrate how to use the API to create web content and applications.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow bg-base-200">
+                        <input type="radio" name="my-accordion-2" />
+                        <div class="collapse-title text-2xl font-medium">How do you select an element from the DOM?</div>
+                        <div class="collapse-content">
+                            <p>The Selectors API offers methods that allow you to quickly and easily retrieve Element nodes from the DOM by matching
+                            them against a set of selectors. This is a much faster approach compared to previous techniques, where it was necessary
+                            to, for example, use a loop in JavaScript code to locate the specific items you needed to find.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow bg-base-200">
+                        <input type="radio" name="my-accordion-2" />
+                        <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+                        <div class="collapse-content">
+                            <p>Event delegation is the process of utilizing event propagation (bubbling) to manage events at a higher level in the DOM
+                            compared to the element where the event initially occurred. This approach enables us to attach a single event listener
+                            for elements that currently exist or may be added in the future.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow bg-base-200">
+                        <input type="radio" name="my-accordion-2" />
+                        <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+                        <div class="collapse-content">
+                            <p>The classList object only provide methods to change the class of an element. If you want to change other attributes like
+                            id , href , or src , you can use the setAttribute() method. The setAttribute() method accepts two arguments: The name of
+                            the attribute to set.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
 
     </main>
     <!-- Footer section  -->
